@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  h1= title
+  p Welcome to #{title}
+  p there will be an object with an array of placeholder assignments here
+  //h1="{{tempAssignment.student_name}}"
+  ul
+    li(ng-repeat="assignment in assignmentData") {{assignment.student_name}}{{assignment.assignment_name}}
